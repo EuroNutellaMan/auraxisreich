@@ -1,0 +1,16 @@
+version="0.1"
+tags={
+	"Alternative History"
+	"Events"
+	"Gameplay"
+	"Ideologies"
+	"Sound"
+	"Technologies"
+	"National Focuses"
+	"Military"
+}
+name="Auraxisreich"
+picture="thumbnail.png"
+replace_path="gfx/loadingscreens"
+supported_version="1.10.1"
+remote_file_id="2279887099"
