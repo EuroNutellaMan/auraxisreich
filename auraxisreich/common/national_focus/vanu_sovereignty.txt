@@ -1,0 +1,2238 @@
+﻿focus_tree = {
+	id = vanu_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = VSY
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 1000 }
+
+###First Stage###
+
+	focus = {
+		id = rise_of_vanu
+		icon = GFX_goal_vanugoals
+		x = 5
+		y = 0
+		
+		cost = 2
+		prerequisite = { focus = }
+		relative_position_id = 
+		mutually_exclusive = { focus =  }
+
+		available = {
+		has_government = transhumanism
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			add_political_power = 100
+			add_manpower = 10000
+			set_major = yes
+			news_event = {
+				id = vanunews.0
+				hours = 1
+			}
+			162 = {
+				division_template = { name = "Vanu Infantry Division" division_names_group = VSY_Inf_01 regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } infantry = { x = 2 y = 0 } infantry = { x = 2 y = 1 } infantry = { x = 2 y = 2 } } support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } } }
+				create_unit = {
+					division = "name = \"1. Vanu Infantry Division\" division_template = \"Vanu Infantry Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"1. Vanu Infantry Division\" division_template = \"Vanu Infantry Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"1. Vanu Infantry Division\" division_template = \"Vanu Infantry Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"1. Vanu Infantry Division\" division_template = \"Vanu Infantry Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"1. Vanu Infantry Division\" division_template = \"Vanu Infantry Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"1. Vanu Infantry Division\" division_template = \"Vanu Infantry Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = technology_focus
+		icon = GFX_goal_vanugoals
+		x = -2
+		y = 1
+		
+		cost = 2
+		prerequisite = { focus = rise_of_vanu}
+		relative_position_id = rise_of_vanu
+		mutually_exclusive = { focus =  }
+
+		available = {
+		has_government = transhumanism
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			add_ideas = early_building_nanites
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = equals_focus
+		icon = GFX_goal_vanugoals
+		x = 0
+		y = 1
+		
+		cost = 2
+		prerequisite = { focus = rise_of_vanu}
+		relative_position_id = rise_of_vanu
+		mutually_exclusive = { focus =  }
+
+		available = {
+		has_government = transhumanism
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			add_ideas = early_hardlight_barriers
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = might_focus
+		icon = GFX_goal_vanugoals
+		x = 2
+		y = 1
+		
+		cost = 2
+		prerequisite = { focus = rise_of_vanu }
+		relative_position_id = rise_of_vanu
+		mutually_exclusive = { focus =  }
+
+		available = {
+		has_government = transhumanism
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			add_ideas = early_healing_nanites
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = prepare_expansion
+		icon = GFX_goal_vanugoals
+		x = 0
+		y = 1
+		
+		cost = 5
+		prerequisite = { focus = technology_focus }
+		prerequisite = { focus = equals_focus }
+		prerequisite = { focus = might_focus }
+		relative_position_id = equals_focus
+		mutually_exclusive = { focus =  }
+
+		available = {
+		has_government = transhumanism
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			add_manpower = 10000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 5000
+				producer = VSY
+			}
+			add_equipment_to_stockpile = {
+				type = fighter_equipment
+				amount = 200
+				producer = VSY
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 2500
+				producer = VSY
+			}
+			add_political_power = 100
+			add_resource = {
+				type = oil
+				amount = 25
+				state = 162
+			}
+			162 = {
+				division_template = { name = "Vanu Mobile Division" division_names_group = VSY_Arm_01 regiments = { light_armor = { x = 0 y = 0 } light_armor = { x = 0 y = 1 } light_armor = { x = 1 y = 0 } light_armor = { x = 1 y = 1 } motorized = { x = 2 y = 0 } motorized = { x = 2 y = 1 } } support = { mot_recon = { x = 0 y = 0 } engineer = { x = 0 y = 1 } artillery = { x = 0 y = 2 } } }
+				create_unit = {
+					division = "name = \"1. Vanu Mobile Division\" division_template = \"Vanu Mobile Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"1. Vanu Mobile Division\" division_template = \"Vanu Mobile Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"1. Vanu Mobile Division\" division_template = \"Vanu Mobile Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"1. Vanu Mobile Division\" division_template = \"Vanu Mobile Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"1. Vanu Mobile Division\" division_template = \"Vanu Mobile Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"1. Vanu Mobile Division\" division_template = \"Vanu Mobile Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = enlighten_italy
+		icon = GFX_goal_vanugoals
+		x = 0
+		y = 1
+		
+		cost = 10
+		prerequisite = { focus = prepare_expansion }
+		relative_position_id = prepare_expansion
+		mutually_exclusive = { focus =  }
+
+		available = {
+		has_government = transhumanism
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			country_event = { id = vanu.1 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	#### industrial and political stage ####
+	
+	focus = {
+		id = purge_resistance
+		icon = GFX_goal_vanugoals
+		x = 15
+		y = 0
+		
+		cost = 10
+		prerequisite = {  }
+		relative_position_id = 
+		mutually_exclusive = { focus =  }
+
+		available = {
+			has_government = transhumanism
+			has_completed_focus = enlighten_italy
+			NOT = { country_exists = ITA }
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			add_popularity = {
+				ideology = transhumanism
+				popularity = 0.10
+			}
+			add_manpower = -50000
+			add_stability = 0.05
+			add_political_power = 200
+			country_event = { id = vanu.2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = search_for_more_artifacts
+		icon = GFX_goal_vanugoals
+		x = 0
+		y = 1
+		
+		cost = 10
+		prerequisite = { focus = purge_resistance }
+		relative_position_id = purge_resistance
+		mutually_exclusive = { focus =  }
+
+		available = {
+			has_government = transhumanism
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			add_research_slot = 1
+			set_technology = { atomic_research = 1 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = improve_builder_nanites
+		icon = GFX_goal_vanugoals
+		x = -2
+		y = 1
+		
+		cost = 3
+		prerequisite = { focus = search_for_more_artifacts }
+		relative_position_id = search_for_more_artifacts
+		mutually_exclusive = { focus =  }
+
+		available = {
+			has_government = transhumanism
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = early_building_nanites
+				add_idea = building_nanites_one
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = improve_hardlight_barriers
+		icon = GFX_goal_vanugoals
+		x = 0
+		y = 1
+		
+		cost = 3
+		prerequisite = { focus = search_for_more_artifacts }
+		relative_position_id = search_for_more_artifacts
+		mutually_exclusive = { focus =  }
+
+		available = {
+			has_government = transhumanism
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = early_hardlight_barriers
+				add_idea = hardlight_barriers_one
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = improve_spawn_tubes
+		icon = GFX_goal_vanugoals
+		x = 2
+		y = 1
+		
+		cost = 3
+		prerequisite = { focus = search_for_more_artifacts }
+		relative_position_id = search_for_more_artifacts
+		mutually_exclusive = { focus =  }
+
+		available = {
+			has_government = transhumanism
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = early_healing_nanites
+				add_idea = healing_nanites_one
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = prepare_launch_sites
+		icon = GFX_goal_vanugoals
+		x = 0
+		y = 1
+		
+		cost = 10
+		prerequisite = { focus = improve_builder_nanites }
+		prerequisite = { focus = improve_hardlight_barriers }
+		prerequisite = { focus = improve_spawn_tubes }
+		relative_position_id = improve_hardlight_barriers
+		mutually_exclusive = { focus =  }
+
+		available = {
+			has_government = transhumanism
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				ahead_reduction = 6.0
+				uses = 1
+				category = rocketry
+			}
+			set_technology = { nuclear_reactor = 1 }
+			add_building_construction = {
+				type = arms_factory
+				level = 5
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 5
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 5
+				instant_build = yes
+			}
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = send_the_first_bastion_to_space
+		icon = GFX_goal_vanugoals
+		x = 0
+		y = 1
+		
+		cost = 15
+		prerequisite = { focus = prepare_launch_sites }
+		relative_position_id = prepare_launch_sites
+		mutually_exclusive = { focus =  }
+
+		available = {
+			has_government = transhumanism
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			country_event = { id = vanu.3 }
+			add_offsite_building = {
+				type = industrial_complex
+				level = 2
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 2
+			}
+			add_offsite_building = {
+				type = synthetic_refinery
+				level = 2
+			}
+			add_offsite_building = {
+				type = nuclear_reactor
+				level = 2
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = expand_search_for_artifacts
+		icon = GFX_goal_vanugoals
+		x = 0
+		y = 1
+		
+		cost = 10
+		prerequisite = { focus = send_the_first_bastion_to_space }
+		relative_position_id = send_the_first_bastion_to_space
+		mutually_exclusive = { focus =  }
+
+		available = {
+			has_government = transhumanism
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			add_research_slot = 1
+			add_building_construction = {
+				type = infrastructure
+				level = 5
+				instant_build = yes
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = further_improve_builder_nanites
+		icon = GFX_goal_vanugoals
+		x = -2
+		y = 1
+		
+		cost = 3
+		prerequisite = { focus = expand_search_for_artifacts }
+		relative_position_id = expand_search_for_artifacts
+		mutually_exclusive = { focus =  }
+
+		available = {
+			has_government = transhumanism
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = building_nanites_one
+				add_idea = building_nanites_two
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = further_improve_hardlight_barriers
+		icon = GFX_goal_vanugoals
+		x = 0
+		y = 1
+		
+		cost = 3
+		prerequisite = { focus = expand_search_for_artifacts }
+		relative_position_id = expand_search_for_artifacts
+		mutually_exclusive = { focus =  }
+
+		available = {
+			has_government = transhumanism
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = hardlight_barriers_one
+				add_idea = hardlight_barriers_two
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = further_improve_spawn_tubes
+		icon = GFX_goal_vanugoals
+		x = 2
+		y = 1
+		
+		cost = 3
+		prerequisite = { focus = expand_search_for_artifacts }
+		relative_position_id = expand_search_for_artifacts
+		mutually_exclusive = { focus =  }
+
+		available = {
+			has_government = transhumanism
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = healing_nanites_one
+				add_idea = healing_nanites_two
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = race_for_space_dominance
+		icon = GFX_goal_vanugoals
+		x = 0
+		y = 1
+		
+		cost = 15
+		prerequisite = { focus = further_improve_builder_nanites }
+		prerequisite = { focus = further_improve_hardlight_barriers }
+		prerequisite = { focus = further_improve_spawn_tubes }
+		relative_position_id = further_improve_hardlight_barriers
+		mutually_exclusive = { focus =  }
+
+		available = {
+			has_government = transhumanism
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			add_research_slot = 1
+			country_event = { id = vanu.4 }
+			add_tech_bonus = {
+				ahead_reduction = 7.0
+				uses = 1
+				category = rocketry
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 15
+				instant_build = yes
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = focus_on_civilian
+		icon = GFX_goal_vanugoals
+		x = -1
+		y = 1
+		
+		cost = 10
+		prerequisite = { focus = race_for_space_dominance }
+		relative_position_id = race_for_space_dominance
+		mutually_exclusive = { focus = focus_on_military }
+
+		available = {
+			has_government = transhumanism
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 4
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 2
+			}
+			add_offsite_building = {
+				type = synthetic_refinery
+				level = 4
+			}
+			add_offsite_building = {
+				type = nuclear_reactor
+				level = 2
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = focus_on_military
+		icon = GFX_goal_vanugoals
+		x = 1
+		y = 1
+		
+		cost = 10
+		prerequisite = { focus = race_for_space_dominance }
+		relative_position_id = race_for_space_dominance
+		mutually_exclusive = { focus = focus_on_civilian }
+
+		available = {
+			has_government = transhumanism
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 2
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 4
+			}
+			add_offsite_building = {
+				type = synthetic_refinery
+				level = 2
+			}
+			add_offsite_building = {
+				type = nuclear_reactor
+				level = 4
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = research_stabilization_methods
+		icon = GFX_goal_vanugoals
+		x = -1
+		y = 1
+		
+		cost = 10
+		prerequisite = { 
+			focus = focus_on_civilian
+			focus = focus_on_military
+			}
+		relative_position_id = focus_on_military
+		mutually_exclusive = { focus =  }
+
+		available = {
+			has_government = transhumanism
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			add_research_slot = 1
+			add_building_construction = {
+				type = infrastructure
+				level = 15
+				instant_build = yes
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = finalize_builder_nanites
+		icon = GFX_goal_vanugoals
+		x = -2
+		y = 1
+		
+		cost = 10
+		prerequisite = { focus = research_stabilization_methods }
+		relative_position_id = research_stabilization_methods
+		mutually_exclusive = { focus =  }
+
+		available = {
+			has_government = transhumanism
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = building_nanites_two
+				add_idea = building_nanites_three
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = finalize_hardlight_barriers
+		icon = GFX_goal_vanugoals
+		x = 0
+		y = 1
+		
+		cost = 10
+		prerequisite = { focus = research_stabilization_methods }
+		relative_position_id = research_stabilization_methods
+		mutually_exclusive = { focus =  }
+
+		available = {
+			has_government = transhumanism
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = hardlight_barriers_two
+				add_idea = hardlight_barriers_three
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = finalize_spawn_tubes
+		icon = GFX_goal_vanugoals
+		x = 2
+		y = 1
+		
+		cost = 10
+		prerequisite = { focus = research_stabilization_methods }
+		relative_position_id = research_stabilization_methods
+		mutually_exclusive = { focus =  }
+
+		available = {
+			has_government = transhumanism
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = healing_nanites_two
+				add_idea = healing_nanites_three
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = complete_orbital_strike
+		icon = GFX_goal_vanugoals
+		x = 0
+		y = 1
+		
+		cost = 15
+		prerequisite = { focus = finalize_builder_nanites }
+		prerequisite = { focus = finalize_hardlight_barriers }
+		prerequisite = { focus = finalize_spawn_tubes }
+		relative_position_id = finalize_hardlight_barriers
+		mutually_exclusive = { focus =  }
+
+		available = {
+			has_government = transhumanism
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			news_event = {
+				id = vanunews.5
+				hours = 1
+			}
+			add_tech_bonus = {
+				ahead_reduction = 7.0
+				uses = 1
+				category = rocketry
+			}
+			set_technology = {
+				nukes = 1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	### Military and diplomatic branch ###
+	
+	focus = {
+		id = massive_recruitment_drive
+		icon = GFX_goal_vanugoals
+		x = 30
+		y = 0
+		
+		cost = 10
+		prerequisite = {  }
+		relative_position_id = 
+		mutually_exclusive = { focus =  }
+
+		available = {
+			has_government = transhumanism
+			has_completed_focus = enlighten_italy
+			NOT = { country_exists = ITA }
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			add_manpower = 500000
+			add_war_support = 0.05
+			add_political_power = 200
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = equip_the_infantry
+		icon = GFX_goal_vanugoals
+		x = -2
+		y = 1
+		
+		cost = 5
+		prerequisite = { focus = massive_recruitment_drive }
+		relative_position_id = massive_recruitment_drive
+		mutually_exclusive = { focus =  }
+
+		available = {
+			has_government = transhumanism
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 10000
+				producer = VSY
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 10000
+				producer = VSY
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = equip_the_mobile_units
+		icon = GFX_goal_vanugoals
+		x = 0
+		y = 1
+		
+		cost = 5
+		prerequisite = { focus = massive_recruitment_drive }
+		relative_position_id = massive_recruitment_drive
+		mutually_exclusive = { focus =  }
+
+		available = {
+			has_government = transhumanism
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = mechanized_equipment
+				amount = 1000
+				producer = VSY
+			}
+			add_equipment_to_stockpile = {
+				type = medium_tank_equipment
+				amount = 1000
+				producer = VSY
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = equip_the_air_force
+		icon = GFX_goal_vanugoals
+		x = 2
+		y = 1
+		
+		cost = 5
+		prerequisite = { focus = massive_recruitment_drive }
+		relative_position_id = massive_recruitment_drive
+		mutually_exclusive = { focus =  }
+
+		available = {
+			has_government = transhumanism
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = fighter_equipment
+				amount = 500
+				producer = VSY
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = train_the_military
+		icon = GFX_goal_vanugoals
+		x = 0
+		y = 1
+		
+		cost = 10
+		prerequisite = { focus = equip_the_infantry }
+		prerequisite = { focus = equip_the_mobile_units }
+		prerequisite = { focus = equip_the_air_force }
+		relative_position_id = equip_the_mobile_units
+		mutually_exclusive = { focus =  }
+
+		available = {
+			has_government = transhumanism
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			army_experience = 100
+			air_experience = 50
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = air_doctrine
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	# Military buildup #
+	
+	focus = {
+		id = improve_the_military
+		icon = GFX_goal_vanugoals
+		x = -6
+		y = 1
+		
+		cost = 10
+		prerequisite = { focus = train_the_military }
+		relative_position_id = train_the_military
+		mutually_exclusive = { focus =  }
+
+		available = {
+			has_government = transhumanism
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 2
+			}
+			add_manpower = 1000
+			add_war_support = 0.25
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = focus_on_the_infantry
+		icon = GFX_goal_vanugoals
+		x = -2
+		y = 1
+		
+		cost = 10
+		prerequisite = { focus = improve_the_military }
+		relative_position_id = improve_the_military
+		mutually_exclusive = { focus = focus_on_the_mobile_units }
+		mutually_exclusive = { focus = focus_on_the_air_force }
+
+		available = {
+			has_government = transhumanism
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				ahead_reduction = 3
+				uses = 2
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				ahead_reduction = 3
+				uses = 2
+				category = artillery
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = focus_on_the_mobile_units
+		icon = GFX_goal_vanugoals
+		x = 0
+		y = 1
+		
+		cost = 10
+		prerequisite = { focus = improve_the_military }
+		relative_position_id = improve_the_military
+		mutually_exclusive = { focus = focus_on_the_infantry }
+		mutually_exclusive = { focus = focus_on_the_air_force }
+
+		available = {
+			has_government = transhumanism
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				ahead_reduction = 3
+				uses = 2
+				category = armor
+			}
+			add_tech_bonus = {
+				ahead_reduction = 3
+				uses = 2
+				category = cat_mechanized_equipment
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = focus_on_the_air_force
+		icon = GFX_goal_vanugoals
+		x = 2
+		y = 1
+		
+		cost = 10
+		prerequisite = { focus = improve_the_military }
+		relative_position_id = improve_the_military
+		mutually_exclusive = { focus = focus_on_the_infantry }
+		mutually_exclusive = { focus = focus_on_the_mobile_units }
+
+		available = {
+			has_government = transhumanism
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				ahead_reduction = 3
+				uses = 4
+				category = light_fighter
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	# diplomacy #
+	
+	focus = {
+		id = prepare_the_path_to_enlightenment
+		icon = GFX_goal_vanugoals
+		x = 6
+		y = 1
+		
+		cost = 5
+		prerequisite = { focus = train_the_military }
+		relative_position_id = train_the_military
+		mutually_exclusive = { focus =  }
+
+		available = {
+			has_government = transhumanism
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			unlock_decision_category_tooltip = vanu_coring_decisions
+			unlock_decision_category_tooltip = vanu_coring_mission
+			add_war_support = 0.25
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = war_with_the_allies
+		icon = GFX_goal_vanugoals
+		x = -5
+		y = 1
+		
+		cost = 10
+		prerequisite = { focus = prepare_the_path_to_enlightenment }
+		relative_position_id = prepare_the_path_to_enlightenment
+		mutually_exclusive = { focus =  }
+
+		available = {
+			has_government = transhumanism
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			declare_war_on = {
+				target = FRA
+				type = annex_everything
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = destroy_the_uk
+		icon = GFX_goal_vanugoals
+		x = -1
+		y = 1
+		
+		cost = 10
+		prerequisite = { focus = war_with_the_allies }
+		relative_position_id = war_with_the_allies
+		mutually_exclusive = { focus =  }
+
+		available = {
+			has_government = transhumanism
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			declare_war_on = {
+				target = ENG
+				type = annex_everything
+			}
+			set_state_controller = 123
+			123 = {
+				division_template = { name = "Vanu Infantry Division" division_names_group = VSY_Inf_01 regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } infantry = { x = 2 y = 0 } infantry = { x = 2 y = 1 } infantry = { x = 2 y = 2 } } support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } } }
+				create_unit = {
+					division = "name = \"1. Vanu Infantry Division\" division_template = \"Vanu Infantry Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"1. Vanu Infantry Division\" division_template = \"Vanu Infantry Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"1. Vanu Infantry Division\" division_template = \"Vanu Infantry Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"1. Vanu Infantry Division\" division_template = \"Vanu Infantry Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"1. Vanu Infantry Division\" division_template = \"Vanu Infantry Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"1. Vanu Infantry Division\" division_template = \"Vanu Infantry Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"1. Vanu Infantry Division\" division_template = \"Vanu Infantry Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"1. Vanu Infantry Division\" division_template = \"Vanu Infantry Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = destroy_the_usa
+		icon = GFX_goal_vanugoals
+		x = 1
+		y = 1
+		
+		cost = 10
+		prerequisite = { focus = war_with_the_allies }
+		relative_position_id = war_with_the_allies
+		mutually_exclusive = { focus =  }
+
+		available = {
+			has_government = transhumanism
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			declare_war_on = {
+				target = USA
+				type = annex_everything
+			}
+			set_state_controller = 366
+			366 = {
+				division_template = { name = "Vanu Infantry Division" division_names_group = VSY_Inf_01 regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } infantry = { x = 2 y = 0 } infantry = { x = 2 y = 1 } infantry = { x = 2 y = 2 } } support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } } }
+				create_unit = {
+					division = "name = \"1. Vanu Infantry Division\" division_template = \"Vanu Infantry Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"1. Vanu Infantry Division\" division_template = \"Vanu Infantry Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"1. Vanu Infantry Division\" division_template = \"Vanu Infantry Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"1. Vanu Infantry Division\" division_template = \"Vanu Infantry Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"1. Vanu Infantry Division\" division_template = \"Vanu Infantry Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"1. Vanu Infantry Division\" division_template = \"Vanu Infantry Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"1. Vanu Infantry Division\" division_template = \"Vanu Infantry Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"1. Vanu Infantry Division\" division_template = \"Vanu Infantry Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = the_allies_are_gone
+		icon = GFX_goal_vanugoals
+		x = -1
+		y = 1
+		
+		cost = 10
+		prerequisite = { focus = destroy_the_uk }
+		prerequisite = { focus = destroy_the_usa }
+		relative_position_id = destroy_the_usa
+		mutually_exclusive = { focus =  }
+
+		available = {
+			has_government = transhumanism
+			NOT = { country_exists = FRA }
+			NOT = { country_exists = ENG }
+			NOT = { country_exists = USA }
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			news_event = {
+				id = vanunews.al
+				hours = 1
+			}
+			add_stability = 0.30
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = war_with_the_axis
+		icon = GFX_goal_vanugoals
+		x = 0
+		y = 1
+		
+		cost = 10
+		prerequisite = { focus = prepare_the_path_to_enlightenment }
+		relative_position_id = prepare_the_path_to_enlightenment
+		mutually_exclusive = { focus =  }
+
+		available = {
+			has_government = transhumanism
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			declare_war_on = {
+				target = GER
+				type = annex_everything
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = destroy_japan
+		icon = GFX_goal_vanugoals
+		x = -1
+		y = 1
+		
+		cost = 10
+		prerequisite = { focus = war_with_the_axis }
+		relative_position_id = war_with_the_axis
+		mutually_exclusive = { focus =  }
+
+		available = {
+			has_government = transhumanism
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			declare_war_on = {
+				target = JAP
+				type = annex_everything
+			}
+			set_state_controller = 531
+			531 = {
+				division_template = { name = "Vanu Infantry Division" division_names_group = VSY_Inf_01 regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } infantry = { x = 2 y = 0 } infantry = { x = 2 y = 1 } infantry = { x = 2 y = 2 } } support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } } }
+				create_unit = {
+					division = "name = \"1. Vanu Infantry Division\" division_template = \"Vanu Infantry Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"1. Vanu Infantry Division\" division_template = \"Vanu Infantry Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"1. Vanu Infantry Division\" division_template = \"Vanu Infantry Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"1. Vanu Infantry Division\" division_template = \"Vanu Infantry Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"1. Vanu Infantry Division\" division_template = \"Vanu Infantry Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"1. Vanu Infantry Division\" division_template = \"Vanu Infantry Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"1. Vanu Infantry Division\" division_template = \"Vanu Infantry Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"1. Vanu Infantry Division\" division_template = \"Vanu Infantry Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = destroy_spain
+		icon = GFX_goal_vanugoals
+		x = 1
+		y = 1
+		
+		cost = 10
+		prerequisite = { focus = war_with_the_axis }
+		relative_position_id = war_with_the_axis
+		mutually_exclusive = { focus =  }
+
+		available = {
+			has_government = transhumanism
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			declare_war_on = {
+				target = D01
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SPR
+				type = annex_everything
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = the_fascists_are_gone
+		icon = GFX_goal_vanugoals
+		x = -1
+		y = 1
+		
+		cost = 10
+		prerequisite = { focus = destroy_japan }
+		prerequisite = { focus = destroy_spain }
+		relative_position_id = destroy_spain
+		mutually_exclusive = { focus =  }
+
+		available = {
+			has_government = transhumanism
+			NOT = { country_exists = GER }
+			NOT = { country_exists = JAP }
+			NOT = { country_exists = D01 }
+			NOT = { country_exists = SPR }
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			news_event = {
+				id = vanunews.ax
+				hours = 1
+			}
+			add_stability = 0.30
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = destroy_the_soviets
+		icon = GFX_goal_vanugoals
+		x = 5
+		y = 1
+		
+		cost = 10
+		prerequisite = { focus = prepare_the_path_to_enlightenment }
+		relative_position_id = prepare_the_path_to_enlightenment
+		mutually_exclusive = { focus =  }
+
+		available = {
+			has_government = transhumanism
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			declare_war_on = {
+				target = SOV
+				type = annex_everything
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = destroy_brazil
+		icon = GFX_goal_vanugoals
+		x = -1
+		y = 1
+		
+		cost = 10
+		prerequisite = { focus = destroy_the_soviets }
+		relative_position_id = destroy_the_soviets
+		mutually_exclusive = { focus =  }
+
+		available = {
+			has_government = transhumanism
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			declare_war_on = {
+				target = BRA
+				type = annex_everything
+			}
+			set_state_controller = 500
+			500 = {
+				division_template = { name = "Vanu Infantry Division" division_names_group = VSY_Inf_01 regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } infantry = { x = 2 y = 0 } infantry = { x = 2 y = 1 } infantry = { x = 2 y = 2 } } support = { engineer = { x = 0 y = 0 } artillery = { x = 0 y = 1 } } }
+				create_unit = {
+					division = "name = \"1. Vanu Infantry Division\" division_template = \"Vanu Infantry Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"1. Vanu Infantry Division\" division_template = \"Vanu Infantry Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"1. Vanu Infantry Division\" division_template = \"Vanu Infantry Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"1. Vanu Infantry Division\" division_template = \"Vanu Infantry Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"1. Vanu Infantry Division\" division_template = \"Vanu Infantry Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"1. Vanu Infantry Division\" division_template = \"Vanu Infantry Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"1. Vanu Infantry Division\" division_template = \"Vanu Infantry Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"1. Vanu Infantry Division\" division_template = \"Vanu Infantry Division\" start_experience_factor = 0" 
+					owner = ROOT
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = destroy_china
+		icon = GFX_goal_vanugoals
+		x = 1
+		y = 1
+		
+		cost = 10
+		prerequisite = { focus = destroy_the_soviets }
+		relative_position_id = destroy_the_soviets
+		mutually_exclusive = { focus =  }
+
+		available = {
+			has_government = transhumanism
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			declare_war_on = {
+				target = CHI
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SIK
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = PRC
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = GXC
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = MAN
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = MEN
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SHX
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = XSM
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = YUN
+				type = annex_everything
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = the_majors_are_gone
+		icon = GFX_goal_vanugoals
+		x = -1
+		y = 1
+		
+		cost = 10
+		prerequisite = { focus = destroy_brazil }
+		prerequisite = { focus = destroy_china }
+		relative_position_id = destroy_china
+		mutually_exclusive = { focus =  }
+
+		available = {
+			has_government = transhumanism
+			NOT = { country_exists = SOV }
+			NOT = { country_exists = BRA }
+			NOT = { country_exists = CHI }
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			news_event = {
+				id = vanunews.cm
+				hours = 1
+			}
+			add_stability = 0.30
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = complete_enlightenment
+		icon = GFX_goal_vanugoals
+		x = 0
+		y = 1
+		
+		cost = 10
+		prerequisite = { focus = the_allies_are_gone }
+		prerequisite = { focus = the_fascists_are_gone }
+		prerequisite = { focus = the_majors_are_gone }
+		relative_position_id = the_fascists_are_gone
+		mutually_exclusive = { focus =  }
+
+		available = {
+			has_government = transhumanism
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			add_ideas = final_enlightenment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	### finale ###
+	
+	focus = {
+		id = an_enlightened_humanity
+		icon = GFX_goal_vanugoals
+		x = 40
+		y = 0
+		
+		cost = 1
+		prerequisite = {  }
+		relative_position_id = 
+		mutually_exclusive = { focus =  }
+
+		available = {
+			has_government = transhumanism
+			has_completed_focus = enlighten_italy
+			has_completed_focus = complete_orbital_strike
+			has_completed_focus = complete_enlightenment
+			has_war = no
+			all_neighbor_country = {
+				country_exists = true
+			}
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			news_event = {
+				id = vanunews.victory
+				hours = 1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}		

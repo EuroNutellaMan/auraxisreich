@@ -1,0 +1,343 @@
+vanu_coring_decisions = {
+     core_state_peace = {
+		visible = { has_war = no }
+		available = {
+			if = {
+				limit = {
+					tag = "VSY"
+				}
+				has_completed_focus = prepare_the_path_to_enlightenment
+				else = {
+					AND = {
+						has_war = no
+						any_owned_state = {
+							AND = {
+								NOT = { is_core_of = FROM}
+								any_neighbor_state = {
+									is_core_of = FROM
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		cost = 10
+		modifier = { consumer_goods_factor = 0.05 }
+		days_remove = 10
+		icon = generic_form_nation
+		remove_effect = {
+			random_owned_state = {
+				limit = {		
+					AND = {
+						NOT = {is_core_of = FROM}
+						any_neighbor_state = {
+							is_core_of = FROM
+						}
+					}
+				}
+				add_core_of = FROM
+			}
+		
+		}
+		ai_will_do = {
+			factor = 0
+		}
+    }
+	 
+	 
+	 
+	  core_state_war = {
+		visible = { has_war = yes }
+		available = {
+			if = {
+				limit = {
+					tag = "VSY"
+				}
+				has_completed_focus = prepare_the_path_to_enlightenment
+				else = {
+					AND = {
+						has_war = yes
+						any_owned_state = {
+							AND = {
+								NOT = { is_core_of = FROM}
+								any_neighbor_state = {
+									is_core_of = FROM
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		cost = 20
+		modifier = { consumer_goods_factor = 0.10 }
+		days_remove = 20
+		icon = generic_form_nation
+		remove_effect = {
+			random_owned_state = {
+				limit = {		
+					AND = {
+						NOT = {is_core_of = FROM}
+						any_neighbor_state = {
+							is_core_of = FROM
+						}
+					}
+				}
+				add_core_of = FROM
+			}
+		}
+		ai_will_do = {
+			factor = 0
+
+		}
+     }
+	 
+	 
+	 
+	 core_remote_state_peace = {
+		visible = { has_war = no }
+		available = {
+			if = {
+				limit = {
+					tag = "VSY"
+				}
+				has_completed_focus = prepare_the_path_to_enlightenment
+				else = {
+					AND = {
+						has_war = no
+						all_neighbor_state = {
+							AND = {
+								NOT = { is_core_of = FROM}
+								any_neighbor_state = {
+									is_core_of = FROM
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		cost = 15
+		modifier = { consumer_goods_factor = 0.07 }
+		days_remove = 15
+		icon = generic_form_nation
+		remove_effect = {
+			random_owned_state = {
+				limit = {		
+					AND = {
+						NOT = {is_core_of = FROM}
+						all_neighbor_state = {
+							NOT = {
+								is_core_of = FROM
+								}
+						}
+					}
+				}
+				add_core_of = FROM
+			}
+		}
+		ai_will_do = {
+			factor = 0
+
+		}
+     }
+	 
+	 
+	 
+	  core_remote_state_war = {
+		visible = { has_war = yes }
+		available = {
+			if = {
+				limit = {
+					tag = "VSY"
+				}
+				has_completed_focus = prepare_the_path_to_enlightenment
+				else = {
+					AND = {
+						has_war = yes
+						all_neighbor_state = {
+							AND = {
+								NOT = { is_core_of = FROM}
+								any_neighbor_state = {
+									is_core_of = FROM
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		cost = 30
+		modifier = { consumer_goods_factor = 0.15 }
+		days_remove = 30
+		icon = generic_form_nation
+		remove_effect = {
+			random_owned_state = {
+				limit = {		
+					AND = {
+						NOT = {is_core_of = FROM}
+						all_neighbor_state = {
+							NOT = {
+								is_core_of = FROM
+								}
+						}
+					}
+				}
+				add_core_of = FROM
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+     }
+
+
+	
+	start_ongoing_integration = {
+		visible = {
+			AND = {
+				has_war = no 
+				NOT = {has_idea = integration_efforts}
+			}
+		}
+		available = {
+			if = {
+				limit = {
+					tag = "VSY"
+				}
+				AND = {
+					has_completed_focus = prepare_the_path_to_enlightenment
+					has_war = no
+					NOT = {has_idea = integration_efforts}
+					any_owned_state = {
+						AND = {
+							NOT = { is_core_of = FROM}
+							any_neighbor_state = {
+								is_core_of = FROM
+							}
+						}
+					}					
+				}
+				else = {
+					AND = {
+						has_war = no
+						NOT = {has_idea = integration_efforts}
+						any_owned_state = {
+							AND = {
+								NOT = { is_core_of = FROM}
+								any_neighbor_state = {
+									is_core_of = FROM
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		icon = generic_form_nation
+		complete_effect = {
+			activate_mission = ongoing_integration
+			add_ideas = integration_efforts
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	end_ongoing_integration = {
+		visible = {has_idea = integration_efforts}
+		icon = generic_form_nation
+		complete_effect = {
+			remove_mission = ongoing_integration
+			remove_ideas = integration_efforts
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		
+	}
+} 
+
+
+vanu_coring_mission = {
+	ongoing_integration = {                
+		allowed = {
+			AND = {
+				has_war = no
+				any_owned_state = {
+					AND = {
+						NOT = { is_core_of = FROM}
+						any_neighbor_state = {
+							is_core_of = FROM
+						}
+					}
+				}
+			}
+		}
+		available = {
+			if = {
+				limit = {
+					tag = "VSY"
+				}
+				AND = {
+					has_completed_focus = prepare_the_path_to_enlightenment
+					OR = {
+						has_political_power < 0
+						has_war = yes
+						NOT = { has_idea = integration_efforts}
+						NOT = {
+							any_owned_state = {
+								AND = {
+									NOT = { is_core_of = FROM}
+									any_neighbor_state = {
+										is_core_of = FROM
+									}
+								}
+							}
+						}
+					}
+				}
+				else = {
+					OR = {
+						has_political_power < 0
+						has_war = yes
+						NOT = { has_idea = integration_efforts}
+						NOT = {
+							any_owned_state = {
+								AND = {
+									NOT = { is_core_of = FROM}
+									any_neighbor_state = {
+										is_core_of = FROM
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		activation = { always = no}
+		is_good = yes 
+		icon = decision_icon_default
+		days_mission_timeout = 10  
+		timeout_effect = {			
+			random_owned_state = {
+				limit = {
+					AND = {
+						NOT = { is_core_of = FROM}
+						any_neighbor_state = {
+							is_core_of = FROM
+						}
+					}
+				}
+				add_core_of = from
+			}
+			
+			activate_mission = ongoing_integration
+		}
+		complete_effect = {
+			remove_ideas = integration_efforts
+		}
+	}
+}

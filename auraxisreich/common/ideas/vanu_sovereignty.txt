@@ -1,0 +1,835 @@
+ideas = {
+	
+	country = {
+		vanu_zeal = {
+			
+			picture = vanu_zeal
+			
+			allowed = {
+				tag = "VSY"
+				always = yes
+			}
+
+			available = {
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			cancel = {
+				NOT = { has_government = transhumanism }
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.50
+				transhumanism_drift = 0.10
+				political_power_gain = 0.25
+				foreign_subversive_activities = -0.75
+				lend_lease_tension = 2.0
+				join_faction_tension = 2.0
+				justify_war_goal_time = -0.50
+				generate_wargoal_tension = -1.00
+				guarantee_tension = 2.00
+				fascism_acceptance = -100
+				democratic_acceptance = -100
+				communism_acceptance = -100
+			}
+		}
+		
+		early_building_nanites = {
+			
+			picture = building
+			
+			allowed = {
+				tag = "VSY"
+				always = no
+			}
+
+			available = {
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			cancel = {
+				NOT = { has_government = transhumanism }
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.5
+				line_change_production_efficiency_factor = 0.5
+				production_speed_buildings_factor = 0.5
+				industrial_capacity_factory = 0.5
+				production_factory_efficiency_gain_factor = 0.5
+				global_building_slots_factor = 0.5
+				local_resources_factor = 0.5
+				production_oil_factor = 0.5
+				equipment_conversion_speed = -0.25
+				industry_free_repair_factor = 0.5
+				industry_repair_factor = 0.5
+			}
+		}
+		
+		building_nanites_one = {
+			
+			picture = building
+			
+			allowed = {
+				tag = "VSY"
+				always = no
+			}
+
+			available = {
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			cancel = {
+				NOT = { has_government = transhumanism }
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 1
+				line_change_production_efficiency_factor = 1
+				production_speed_buildings_factor = 1
+				industrial_capacity_factory = 1
+				production_factory_efficiency_gain_factor = 1
+				global_building_slots_factor = 1
+				local_resources_factor = 1
+				production_oil_factor = 1
+				equipment_conversion_speed = -0.5
+				industry_free_repair_factor = 1
+				industry_repair_factor = 1
+			}
+		}
+		
+		building_nanites_two = {
+			
+			picture = building
+			
+			allowed = {
+				tag = "VSY"
+				always = no
+			}
+
+			available = {
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			cancel = {
+				NOT = { has_government = transhumanism }
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 1.5
+				line_change_production_efficiency_factor = 1.5
+				production_speed_buildings_factor = 1.5
+				industrial_capacity_factory = 1.5
+				production_factory_efficiency_gain_factor = 1.5
+				global_building_slots_factor = 1.5
+				local_resources_factor = 1.5
+				production_oil_factor = 1.5
+				equipment_conversion_speed = -0.75
+				industry_free_repair_factor = 1.5
+				industry_repair_factor = 1.5
+			}
+		}
+		
+		building_nanites_three = {
+			
+			picture = building
+			
+			allowed = {
+				tag = "VSY"
+				always = no
+			}
+
+			available = {
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			cancel = {
+				NOT = { has_government = transhumanism }
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 2
+				line_change_production_efficiency_factor = 2
+				production_speed_buildings_factor = 2
+				industrial_capacity_factory = 2
+				production_factory_efficiency_gain_factor = 2
+				global_building_slots_factor = 2
+				local_resources_factor = 2
+				production_oil_factor = 2
+				equipment_conversion_speed = 1
+				industry_free_repair_factor = 2
+				industry_repair_factor = 2
+			}
+		}
+		
+		early_hardlight_barriers = {
+			
+			picture = hardlight
+			
+			allowed = {
+				tag = "VSY"
+				always = no
+			}
+
+			available = {
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			cancel = {
+				NOT = { has_government = transhumanism }
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				industry_air_damage_factor = -0.25
+				army_defence_factor = 0.25
+				max_dig_in = 0.5
+				dig_in_speed_factor = 0.5
+				production_speed_bunker_factor = 0.5
+				army_core_defence_factor = 0.25
+			}
+		}
+		
+		hardlight_barriers_one = {
+			
+			picture = hardlight
+			
+			allowed = {
+				tag = "VSY"
+				always = no
+			}
+
+			available = {
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			cancel = {
+				NOT = { has_government = transhumanism }
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				industry_air_damage_factor = -0.5
+				army_defence_factor = 0.5
+				max_dig_in = 1
+				dig_in_speed_factor = 1
+				production_speed_bunker_factor = 1
+				army_core_defence_factor = 0.5
+			}
+		}
+		
+		hardlight_barriers_two = {
+			
+			picture = hardlight
+			
+			allowed = {
+				tag = "VSY"
+				always = no
+			}
+
+			available = {
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			cancel = {
+				NOT = { has_government = transhumanism }
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				industry_air_damage_factor = -0.75
+				army_defence_factor = 0.75
+				max_dig_in = 1.5
+				dig_in_speed_factor = 1.5
+				production_speed_bunker_factor = 1.5
+				army_core_defence_factor = 0.75
+			}
+		}
+		
+		hardlight_barriers_three = {
+			
+			picture = hardlight
+			
+			allowed = {
+				tag = "VSY"
+				always = no
+			}
+
+			available = {
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			cancel = {
+				NOT = { has_government = transhumanism }
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				industry_air_damage_factor = -1
+				army_defence_factor = 1
+				max_dig_in = 2
+				dig_in_speed_factor = 2
+				production_speed_bunker_factor = 2
+				army_core_defence_factor = 1
+			}
+		}
+		
+		early_healing_nanites = {
+			
+			picture = healing
+			
+			allowed = {
+				tag = "VSY"
+				always = no
+			}
+
+			available = {
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			cancel = {
+				NOT = { has_government = transhumanism }
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.5
+				non_core_manpower = 0.5
+				army_morale_factor = 0.5
+				attrition = -0.5
+				experience_loss_factor = -0.25
+				land_reinforce_rate = 0.5
+			}
+		}
+		
+		healing_nanites_one = {
+			
+			picture = healing
+			
+			allowed = {
+				tag = "VSY"
+				always = no
+			}
+
+			available = {
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			cancel = {
+				NOT = { has_government = transhumanism }
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 1
+				non_core_manpower = 1
+				army_morale_factor = 1
+				attrition = -1
+				experience_loss_factor = -0.5
+				land_reinforce_rate = 1
+			}
+		}
+		
+		healing_nanites_two = {
+			
+			picture = healing
+			
+			allowed = {
+				tag = "VSY"
+				always = no
+			}
+
+			available = {
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			cancel = {
+				NOT = { has_government = transhumanism }
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 1.5
+				non_core_manpower = 1.5
+				army_morale_factor = 1.5
+				attrition = -1.5
+				experience_loss_factor = -0.75
+				land_reinforce_rate = 1.5
+			}
+		}
+		
+		healing_nanites_three = {
+			
+			picture = healing
+			
+			allowed = {
+				tag = "VSY"
+				always = no
+			}
+
+			available = {
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			cancel = {
+				NOT = { has_government = transhumanism }
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 2
+				non_core_manpower = 2
+				army_morale_factor = 2
+				attrition = -2
+				experience_loss_factor = -1
+				land_reinforce_rate = 2
+			}
+		}
+		
+		final_enlightenment = {
+			
+			picture = vanu_zeal
+			
+			allowed = {
+				tag = "VSY"
+				always = no
+			}
+
+			available = {
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			cancel = {
+				NOT = { has_government = transhumanism }
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				justify_war_goal_time = -0.25
+				transhumanism_drift = 0.05
+			}
+		}
+	}
+		
+	political_advisor = {
+	
+		ministry_of_enlightenment = {
+			
+			picture = vanu_moe
+			
+			allowed = {
+				tag = "VSY"
+				has_government = transhumanism
+			}
+			
+			available = {
+			}
+			
+			traits = { vanu_propagandist }
+
+			do_effect = {
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}	
+			
+		nanite_production_management = {
+			
+			picture = vanu_mpm
+			
+			allowed = {
+				tag = "VSY"
+				has_government = transhumanism
+			}
+			
+			available = {
+			}
+			
+			traits = { vanu_industrial_manager }
+
+			do_effect = {
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		ministry_of_military_management = {
+			
+			picture = vanu_momm
+			
+			allowed = {
+				tag = "VSY"
+				has_government = transhumanism
+			}
+			
+			available = {
+			}
+			
+			traits = { vanu_military_complex }
+
+			do_effect = {
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}
+		
+	# MILVSYRY
+	army_chief = {
+		
+		chief_vanu_army = {
+			
+			picture = army_vs
+			
+			allowed = {
+				tag = "VSY"
+				has_government = transhumanism
+			}
+			
+
+			
+			traits = { chief_vanu_army }
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+			
+	}
+	air_chief = {
+		
+		
+		chief_vanu_air = {
+			
+			picture = army_vs
+			
+			allowed = {
+				tag = "VSY"
+				has_government = transhumanism
+			}
+			
+
+			
+			traits = { chief_vanu_air }
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+			
+	}	
+	
+	high_command = {
+	
+		command_vanu_infantry = {
+			
+			picture = army_vs
+			
+			allowed = {
+				tag = "VSY"
+				has_government = transhumanism
+			}
+			
+
+			
+			traits = { command_vanu_infantry }
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		command_vanu_mbt = {
+			
+			picture = army_vs
+			
+			allowed = {
+				tag = "VSY"
+				has_government = transhumanism
+			}
+			
+
+			
+			traits = { command_vanu_mbt }
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		command_vanu_air = {
+			
+			picture = army_vs
+			
+			allowed = {
+				tag = "VSY"
+				has_government = transhumanism
+			}
+			
+
+			
+			traits = { command_vanu_air }
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+	}
+	
+	
+	tank_manufacturer = {
+	
+		designer = yes
+	
+		vanu_mbt_manufacturer = {
+			
+			picture = army_vs
+			
+			allowed = {
+				tag = "VSY"
+				has_government = transhumanism
+			}
+			
+			
+			research_bonus = {
+				armor = 1.00
+			}
+			
+			traits = { tank_manufacturer }
+		}
+		
+		vanu_sunderer_manufacturer = {
+			
+			picture = army_vs
+			
+			allowed = {
+				tag = "VSY"
+				has_government = transhumanism
+			}
+			
+			
+			research_bonus = {
+				motorized_equipment = 1.00
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+		}
+	}
+	
+	
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+		vanu_nanite_gun_manufacturer = {
+			
+			picture = army_vs
+			
+			allowed = {
+				tag = "VSY"
+				has_government = transhumanism
+			}
+			
+
+			
+			research_bonus = {
+				infantry_weapons = 1.00
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+		}
+		
+		vanu_max_suit_manufacturer = {
+			
+			picture = army_vs
+			
+			allowed = {
+				tag = "VSY"
+				has_government = transhumanism
+			}
+			
+
+			
+			research_bonus = {
+				artillery = 1.00
+			}
+			
+			traits = { artillery_manufacturer }
+		}
+	}
+	
+	
+	aircraft_manufacturer = {	
+		
+		designer = yes
+		
+		vanu_scythe_manufacturer = {
+			
+			picture = army_vs
+			
+			allowed = {
+				tag = "VSY"
+				has_government = transhumanism
+			}
+			
+			research_bonus = {
+				air_equipment = 1.00
+			}
+			
+			traits = { light_aircraft_manufacturer }
+		}
+		
+	}
+	
+	industrial_concern = {
+	
+		vanu_industrial_production = {
+			
+			picture = army_vs
+			
+			allowed = {
+				tag = "VSY"
+				has_government = transhumanism
+			}
+			
+			research_bonus = {
+				industry = 1.00
+				electronics = 1.00
+				synth_resources = 1.00
+			}
+			
+			traits = { industrial_concern }
+		}		
+	}
+	
+	theorist = {	
+		
+		vanu_infantry_focus = {
+			ledger = army
+			
+			picture = army_vs
+			
+			allowed = {
+				tag = "VSY"
+				has_government = transhumanism
+			}
+			
+
+			
+			traits = { prioritizes_vanu_infantry }
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		vanu_air_focus = {
+			ledger = air
+			
+			picture = army_vs
+			
+			allowed = {
+				tag = "VSY"
+				has_government = transhumanism
+			}
+			
+
+			
+			traits = { prioritizes_vanu_air }
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		vanu_mbt_focus = {
+			ledger = army
+			
+			picture = army_vs
+			
+			allowed = {
+				tag = "VSY"
+				has_government = transhumanism
+			}
+			
+
+			
+			traits = { prioritizes_vanu_mbt }
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+	}
+}

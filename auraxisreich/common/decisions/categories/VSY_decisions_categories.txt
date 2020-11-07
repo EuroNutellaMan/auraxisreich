@@ -1,0 +1,10 @@
+vanu_coring_decisions = {
+     icon = vs_category_icon
+	 visible = { 
+		any_owned_state = { NOT = { is_core_of = FROM }}
+     }
+}
+
+vanu_coring_mission = {
+	icon = vs_category_icon
+}
