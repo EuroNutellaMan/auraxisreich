@@ -1,0 +1,62 @@
+
+music_station = "vanu_sovereignty"
+
+music = {
+	song = "VanuSovereigntyCombat1"
+
+}
+
+music = {
+	song = "VanuSovereigntyCombat2"
+
+}
+
+music = {
+	song = "VanuSovereigntyCombat3"
+
+}
+
+music = {
+	song = "VanuSovereigntyCombat4"
+
+}
+
+music = {
+	song = "VanuSovereigntyDeployment"
+
+}
+
+music = {
+	song = "VanuSovereigntyFactionSelect"
+
+}
+
+music = {
+	song = "VanuSovereigntyRevival"
+
+}
+
+music = {
+	song = "VanuSovereigntyTheme"
+
+}
+
+music = {
+	song = "VanuSovereigntyTravel1"
+
+}
+
+music = {
+	song = "VanuSovereigntyTravel2"
+
+}
+
+music = {
+	song = "VanuSovereigntyTravel3"
+
+}
+
+music = {
+	song = "VanuSovereigntyTravel4"
+
+}

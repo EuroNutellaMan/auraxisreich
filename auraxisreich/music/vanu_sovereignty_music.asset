@@ -1,0 +1,72 @@
+music = {
+	name = "VanuSovereigntyCombat1"
+	file = "VanuSovereigntyCombat1.ogg"
+	volume = 1
+}
+
+music = {
+	name = "VanuSovereigntyCombat2"
+	file = "VanuSovereigntyCombat2.ogg"
+	volume = 1
+}
+
+music = {
+	name = "VanuSovereigntyCombat3"
+	file = "VanuSovereigntyCombat3.ogg"
+	volume = 1
+}
+
+music = {
+	name = "VanuSovereigntyCombat4"
+	file = "VanuSovereigntyCombat4.ogg"
+	volume = 1
+}
+
+music = {
+	name = "VanuSovereigntyDeployment"
+	file = "VanuSovereigntyDeployment.ogg"
+	volume = 1
+}
+
+music = {
+	name = "VanuSovereigntyFactionSelect"
+	file = "VanuSovereigntyFactionSelect.ogg"
+	volume = 1
+}
+
+music = {
+	name = "VanuSovereigntyRevival"
+	file = "VanuSovereigntyRevival.ogg"
+	volume = 1
+}
+
+music = {
+	name = "VanuSovereigntyTheme"
+	file = "VanuSovereigntyTheme.ogg"
+	volume = 1
+}
+
+music = {
+	name = "VanuSovereigntyTravel1"
+	file = "VanuSovereigntyTravel1.ogg"
+	volume = 1
+}
+
+music = {
+	name = "VanuSovereigntyTravel2"
+	file = "VanuSovereigntyTravel2.ogg"
+	volume = 1
+}
+
+music = {
+	name = "VanuSovereigntyTravel3"
+	file = "VanuSovereigntyTravel3.ogg"
+	volume = 1
+}
+
+music = {
+	name = "VanuSovereigntyTravel4"
+	file = "VanuSovereigntyTravel4.ogg"
+	volume = 1
+}
+
