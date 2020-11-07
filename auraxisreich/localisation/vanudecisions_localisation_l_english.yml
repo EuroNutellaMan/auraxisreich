@@ -1,0 +1,38 @@
+﻿l_english:
+
+vanu_coring_decisions:0 "Enlightenment Efforts"
+coring_decisions_desc:0 "Not all people in the territories we control feel like they are a part of our great movement. By purging resistance and developing their economy we could awaken their scientific spirit."
+
+
+vanu_coring_mission:0 "Enlightenment Campaign"
+
+
+core_state_peace:0 "Integrate Neighbouring State"
+core_state_peace_desc:0 "Integrate a state bordering your core territory."
+
+
+core_state_war:0 "Integrate Neighbouring State"
+core_state_war_desc:0 "Integrate a state bordering your core territory. More effort is required because we are at war."
+
+
+core_remote_state_peace:0 "Integrate Remote State"
+core_remote_state_peace_desc:0 "Integrate a remote state. More effort is required because they are not connected to our core territory."
+
+
+core_remote_state_war:0 "Integrate Remote State"
+core_remote_state_war_desc:0 "Integrate a remote state. More effort is required because we are at war and they are not connected to our core territory."
+
+
+start_ongoing_integration:0 "Start an Integration Campaign"
+start_ongoing_integration_desc:0 "Create a campaign to gradually integrate states adjacent to our core territory."
+
+
+end_ongoing_integration:0 "End the Integration Campaign"
+end_ongoing_integration_desc:0 "The integration campaign is to costly. Stop it!"
+
+
+ongoing_integration:0 "Ongoing Integration Campaign"
+ongoing_integration_desc:0 "A campaign to gradually integrate states adjacent to our core territory."
+
+
+integration_efforts:0 "Integration Efforts"
