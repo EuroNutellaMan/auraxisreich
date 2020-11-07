@@ -1,0 +1,343 @@
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_VSY_gw_artillery_medium"
+		texturefile = "gfx/interface/technologies/max.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_artillery1_medium"
+		texturefile = "gfx/interface/technologies/max.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_artillery4_medium"
+		texturefile = "gfx/interface/technologies/max.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_rocket_artillery_medium"
+		texturefile = "gfx/interface/technologies/max.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_rocket_artillery4_medium"
+		texturefile = "gfx/interface/technologies/max.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_interwar_antiair_medium"
+		texturefile = "gfx/interface/technologies/max.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_antiair2_medium"
+		texturefile = "gfx/interface/technologies/max.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_antiair5_medium"
+		texturefile = "gfx/interface/technologies/max.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_interwar_antitank_medium"
+		texturefile = "gfx/interface/technologies/max.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_antitank2_medium"
+		texturefile = "gfx/interface/technologies/max.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_antitank5_medium"
+		texturefile = "gfx/interface/technologies/max.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/VSY_infantry_equipment.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/VSY_infantry_equipment.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/VSY_infantry_equipment.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/VSY_infantry_equipment.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_motorised_infantry_medium"
+		texturefile = "gfx/interface/technologies/sunderer.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_mechanised_infantry_medium"
+		texturefile = "gfx/interface/technologies/sunderer.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_mechanised_infantry2_medium"
+		texturefile = "gfx/interface/technologies/sunderer.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_mechanised_infantry3_medium"
+		texturefile = "gfx/interface/technologies/sunderer.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/harasser.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/harasser.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/harasser.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_tech_maintenance_company_medium"
+		texturefile = "gfx/interface/technologies/engineer.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_tech_maintenance_company2_medium"
+		texturefile = "gfx/interface/technologies/engineer.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_tech_maintenance_company3_medium"
+		texturefile = "gfx/interface/technologies/engineer.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_tech_maintenance_company4_medium"
+		texturefile = "gfx/interface/technologies/engineer.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_tech_recon_medium"
+		texturefile = "gfx/interface/technologies/vs_recon.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_tech_recon2_medium"
+		texturefile = "gfx/interface/technologies/vs_recon.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_tech_recon3_medium"
+		texturefile = "gfx/interface/technologies/vs_recon.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_tech_recon4_medium"
+		texturefile = "gfx/interface/technologies/vs_recon.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_tech_field_hospital_medium"
+		texturefile = "gfx/interface/technologies/medic.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_tech_field_hospital2_medium"
+		texturefile = "gfx/interface/technologies/medic.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_tech_field_hospital3_medium"
+		texturefile = "gfx/interface/technologies/medic.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_tech_field_hospital4_medium"
+		texturefile = "gfx/interface/technologies/medic.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_basic_light_tank_medium"
+		texturefile = "gfx/interface/technologies/lightning.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_improved_light_tank_medium"
+		texturefile = "gfx/interface/technologies/lightning.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_advanced_light_tank_medium"
+		texturefile = "gfx/interface/technologies/lightning.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_basic_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/magrider.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_improved_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/magrider.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_advanced_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/magrider.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_main_battle_tank_medium"
+		texturefile = "gfx/interface/technologies/magrider.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_basic_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/colossus.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_improved_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/colossus.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_advanced_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/colossus.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_super_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/colossus.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_nukes_medium"
+		texturefile = "gfx/interface/technologies/orbitalstrike.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/scythe.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_fighter1_medium"
+		texturefile = "gfx/interface/technologies/scythe.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_fighter2_medium"
+		texturefile = "gfx/interface/technologies/scythe.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_fighter3_medium"
+		texturefile = "gfx/interface/technologies/scythe.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_jet_fighter1_medium"
+		texturefile = "gfx/interface/technologies/scythe.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_jet_fighter2_medium"
+		texturefile = "gfx/interface/technologies/scythe.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_CAS1_medium"
+		texturefile = "gfx/interface/technologies/valkyrie.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_CAS2_medium"
+		texturefile = "gfx/interface/technologies/valkyrie.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_CAS3_medium"
+		texturefile = "gfx/interface/technologies/valkyrie.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_early_bomber_medium"
+		texturefile = "gfx/interface/technologies/liberator.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/liberator.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/liberator.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_tactical_bomber3_medium"
+		texturefile = "gfx/interface/technologies/liberator.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_jet_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/liberator.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_jet_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/liberator.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/galaxy.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_strategic_bomber2_medium"
+		texturefile = "gfx/interface/technologies/galaxy.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_strategic_bomber3_medium"
+		texturefile = "gfx/interface/technologies/galaxy.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_jet_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/galaxy.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_heavy_fighter1_medium"
+		texturefile = "gfx/interface/technologies/scythe.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_heavy_fighter2_medium"
+		texturefile = "gfx/interface/technologies/scythe.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_VSY_heavy_fighter3_medium"
+		texturefile = "gfx/interface/technologies/scythe.dds"
+	}
+	
+}

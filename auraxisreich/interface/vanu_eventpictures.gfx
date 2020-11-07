@@ -1,0 +1,13 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_report_event_vanu_standard"
+		texturefile = "gfx/event_pictures/report_event_vanu_standard.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_vanu_std"
+		texturefile = "gfx/event_pictures/news_event_vanu_std.dds"
+	}
+
+}

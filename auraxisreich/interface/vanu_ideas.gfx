@@ -1,0 +1,53 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_idea_vanu_zeal"
+		texturefile = "gfx/interface/vanu_ideas/vanu_ideas.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_vanu_moe"
+		texturefile = "gfx/interface/vanu_ideas/vanu_ideas.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_vanu_mpm"
+		texturefile = "gfx/interface/vanu_ideas/vanu_ideas.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_army_vs"
+		texturefile = "gfx/interface/vanu_ideas/vanu_ideas.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_vanu_momm"
+		texturefile = "gfx/interface/vanu_ideas/vanu_ideas.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_vanu_econ"
+		texturefile = "gfx/interface/vanu_ideas/vanu_econ.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_vanu_manp"
+		texturefile = "gfx/interface/vanu_ideas/vanu_manp.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_building"
+		texturefile = "gfx/interface/vanu_ideas/building.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_healing"
+		texturefile = "gfx/interface/vanu_ideas/healing.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_hardlight"
+		texturefile = "gfx/interface/vanu_ideas/hardlight.dds"
+	}
+	
+}
