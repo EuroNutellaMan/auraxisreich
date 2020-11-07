@@ -1,0 +1,192 @@
+﻿###########################
+# News Events
+###########################
+
+add_namespace = vanunews
+
+news_event = {
+	id = vanunews.0
+	title = vanunews.0.t
+	desc = vanunews.0.d
+	picture = GFX_news_event_vanu_std
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Technology Equals Might"
+	}
+	option = {
+		name = "Who are these fools?"
+		ai_chance = { factor = 100 }
+	}
+}
+
+news_event = {
+	id = vanunews.1
+	title = vanunews.1.t
+	desc = vanunews.1.d
+	picture = GFX_news_event_vanu_std
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Technology Equals Might"
+	}
+	option = {
+		name = "Should we be worried?"
+		ai_chance = { factor = 100 }
+	}
+}
+
+news_event = {
+	id = vanunews.2
+	title = vanunews.2.t
+	desc = vanunews.2.d
+	picture = GFX_news_event_vanu_std
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Technology Equals Might"
+	}
+	option = {
+		name = "This is getting out of hand"
+		ai_chance = { factor = 100 }
+	}
+}
+
+news_event = {
+	id = vanunews.3
+	title = vanunews.3.t
+	desc = vanunews.3.d
+	picture = GFX_news_event_vanu_std
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Technology Equals Might"
+	}
+	option = {
+		name = "How is that even possible?"
+		ai_chance = { factor = 100 }
+	}
+}
+
+news_event = {
+	id = vanunews.4
+	title = vanunews.4.t
+	desc = vanunews.4.d
+	picture = GFX_news_event_vanu_std
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Technology Equals Might"
+	}
+	option = {
+		name = "Can the VS be stopped now?"
+		ai_chance = { factor = 100 }
+	}
+}
+
+news_event = {
+	id = vanunews.5
+	title = vanunews.5.t
+	desc = vanunews.5.d
+	picture = GFX_news_event_vanu_std
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Technology Equals Might"
+	}
+	option = {
+		name = "Are we just stalling for time?"
+		ai_chance = { factor = 100 }
+	}
+}
+
+news_event = {
+	id = vanunews.al
+	title = vanunews.al.t
+	desc = vanunews.al.d
+	picture = GFX_news_event_vanu_std
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Technology Equals Might"
+	}
+	option = {
+		name = "This is terrible."
+		ai_chance = { factor = 100 }
+	}
+}
+
+news_event = {
+	id = vanunews.ax
+	title = vanunews.ax.t
+	desc = vanunews.ax.d
+	picture = GFX_news_event_vanu_std
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Technology Equals Might"
+	}
+	option = {
+		name = "This is terrible."
+		ai_chance = { factor = 100 }
+	}
+}
+
+news_event = {
+	id = vanunews.cm
+	title = vanunews.cm.t
+	desc = vanunews.cm.d
+	picture = GFX_news_event_vanu_std
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Technology Equals Might"
+	}
+	option = {
+		name = "This is terrible."
+		ai_chance = { factor = 100 }
+	}
+}
+
+news_event = {
+	id = vanunews.victory
+	title = vanunews.victory.t
+	desc = vanunews.victory.d
+	picture = GFX_news_event_vanu_std
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Technology Equals Might"
+		play_song = VanuSovereigntyTheme
+	}
+}

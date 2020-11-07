@@ -1,0 +1,115 @@
+﻿###########################
+# Vanu Sovereignty Events
+###########################
+
+add_namespace = vanu
+
+country_event = { #war with Italy
+	id = vanu.1
+	title = vanu.1.t
+	desc = vanu.1.d
+	picture = GFX_report_event_vanu_standard
+	
+	is_triggered_only = yes
+	
+	option = { #They Will Not Stand in Our Way
+		name = vanu.1.a
+		ai_chance = { factor = 90 }
+		declare_war_on = {
+			target = ITA
+			type = annex_everything
+		}
+		news_event = {
+			id = vanunews.1
+			hours = 1
+		}
+	}
+}
+
+country_event = { #core Italy
+	id = vanu.2
+	title = vanu.2.t
+	desc = vanu.2.d
+	picture = GFX_report_event_vanu_standard
+	
+	is_triggered_only = yes
+	
+	option = { #For Vanu
+		name = vanu.2.a
+		ai_chance = { factor = 90 }
+		add_state_core = 158
+		add_state_core = 159
+		add_state_core = 160
+		add_state_core = 161
+		add_state_core = 736
+		add_state_core = 39
+		add_state_core = 163
+		add_state_core = 157
+		add_state_core = 2
+		add_state_core = 117
+		add_state_core = 156
+		add_state_core = 115
+		add_state_core = 114
+		add_state_core = 164
+		add_state_core = 451
+		add_state_core = 663
+		add_state_core = 450
+		add_state_core = 662
+		add_state_core = 273
+		add_state_core = 449
+		add_state_core = 661
+		add_state_core = 448
+		add_state_core = 550
+		add_state_core = 559
+		news_event = {
+			id = vanunews.2
+			hours = 1
+		}
+	}
+}
+
+country_event = { #reached space
+	id = vanu.3
+	title = vanu.3.t
+	desc = vanu.3.d
+	picture = GFX_report_event_vanu_standard
+	
+	is_triggered_only = yes
+	
+	option = { #Vanu's light shines upon us
+		name = vanu.3.a
+		ai_chance = { factor = 90 }
+		add_stability = 0.15
+		add_popularity = {
+			ideology = transhumanism
+			popularity = 0.20
+		}
+		news_event = {
+			id = vanunews.3
+			hours = 1
+		}
+	}
+}
+
+country_event = { #dominating space
+	id = vanu.4
+	title = vanu.4.t
+	desc = vanu.4.d
+	picture = GFX_report_event_vanu_standard
+	
+	is_triggered_only = yes
+	
+	option = { #To infinity and beyond
+		name = vanu.4.a
+		ai_chance = { factor = 90 }
+		add_stability = 0.15
+		add_popularity = {
+			ideology = transhumanism
+			popularity = 0.20
+		}
+		news_event = {
+			id = vanunews.4
+			hours = 1
+		}
+	}
+}
